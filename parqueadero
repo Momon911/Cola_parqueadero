@@ -1,0 +1,64 @@
+# -*- coding: utf-8 -*-
+import pprint
+class Asignacion(object):
+def __init__(self, nombre, codigo, placa):
+self.nombre=nombre
+self.codigo=codigo
+self.placa=placa
+
+
+
+class Cola:
+""" Representa una cola con operaciones de encolar, desencolar y
+verificar si está vacía. """
+
+def __init__(self):
+""" Crea una cola vacía. """
+# La cola vacía se representa con una lista vacía
+self.items=[]
+
+
+def encolar(self, x):
+""" Agrega el elemento x a la cola. """
+# Encolar es agregar al final de la cola.
+self.items.append(x)
+
+
+def desencolar(self):
+""" Devuelve el elemento inicial y lo elimina de la cola.
+Si la cola está vacía levanta una excepción. """
+try:
+return self.items.pop(0)
+except IndexError:
+raise ValueError("La cola está vacía")
+
+def es_vacia(self):
+""" Devuelve True si la lista está vacía, False si no. """
+return self.items == []
+
+
+def datos(self):
+global x
+print ("asdadad")
+nombre = input("Introduce tu nombre: ")
+print ("El nombre que ingreso es:\n",nombre)
+
+
+
+codigo = input("Introduce tu codigo: ")
+print ("El codigo que ingreso es:\n",codigo)
+
+
+placa = input("Introduce tu placa: ")
+print ("El placa que ingreso es:\n",placa)
+
+x = Asignacion(nombre, codigo, placa) 
+
+c=Cola()
+c.datos()
+c.encolar(x)
+datos=c.desencolar
+print ("los datos del parqueadero ocupado son:")
+print (datos.nombre)
+print (datos.codigo)
+print (datos.placa)
